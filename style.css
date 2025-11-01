@@ -233,6 +233,8 @@ section {
 .home-sci a:hover::before {
   width: 100%;
 }
+
+/* About Section */
 .about{
   display: flex;
   justify-content: center;
@@ -255,8 +257,15 @@ span{
   width: 25rem;
   height: 25rem;
   border-radius: 50%;
+  display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+@keyframes spin {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 .about-img img{
   width: 90%;
@@ -277,4 +286,42 @@ span{
   border-right: .2rem solid var(--main-color);
   justify-content: center;
   align-items: center;
+}
+.about-content{
+  text-align: center;
+}
+.about-content h3{
+  font-size: 2.6rem;
+}
+.about-content p{
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+.btn-box {
+  position: relative;
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  width: 34.5rem;           /* 👈 ye problem wali line hai */
+  height: 5rem;
+  gap: 1.5rem;
+}
+
+.btn-box .bts:hover {
+  color: var(--main-color);
+}
+
+.btn-box .bts::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--bg-color);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.btn-box .bts:hover::before {
+  width: 100%;
 }
