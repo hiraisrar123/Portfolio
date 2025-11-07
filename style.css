@@ -412,3 +412,10 @@ span{
   flex-wrap: wrap;
   gap: 5rem;
 }
+.skills .skills-column{
+  flex: 1.1  40rem;
+}
+.skills-column .tittle{
+  font-size: 2.5rem;
+  
+}
