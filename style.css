@@ -325,3 +325,29 @@ span{
 .btn-box .bts:hover::before {
   width: 100%;
 }
+
+.education{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: auto;
+  padding-bottom: 5rem;
+}
+
+.education .education-row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.education-row .education-column{
+  flex: 1 1 4rem;
+}
+.education-column .tittle{
+  font-size: 2.5rem;
+  margin:  0 0 1.5rem 2rem;
+}
+.education-column .education-box{
+  border-left: .2rem solid var(--main-color);
+  
+}
